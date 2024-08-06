@@ -10,18 +10,8 @@ namespace algorithm_Problem
     {
         static void Main(string[] args)
         {
-            int[] score = { 67, 81, 91, 100, 32, 48 };
-            int[] rankings = Enumerable.Repeat(1, 6).ToArray();
-            // 1.Enumerable 클래스는 IEnumerable<T> 인터페이스를 구현하는 컬렉션 객체에 대해
-            //   LINQ 쿼리를 수행할 수 있는 메서드를 제공한다.
-
-            //*LINQ .NET Framework에서 데이터 쿼리를 지원하기 위해 도입된 기술로,
-            // C# 및 VB.NET에서 사용할 수 있는 쿼리 언어이다.
-            // 데이터를 검색, 정렬, 필터링, 그룹화 등을 할 수 있다.
-
-            // 2.Repeat 메서드는 특정 숫자를 특정 횟수만큼 반복한 집합을 만들 때 사용하는 메서드이다.
-
-            // 3.ToArray 메서드는 T[]배열로 만들때 사용 할 수 있다.
+            int[] score = { 67, 81, 91, 100, 32, 48 };          //플레이어 점수값 목록
+            int[] rankings = Enumerable.Repeat(1, 6).ToArray(); //순위 배열 만들기
 
             Array.Sort(score);  // 점수를 정렬 시킨다.
             for (int i = 0; i < score.Length; i++)
@@ -44,3 +34,14 @@ namespace algorithm_Problem
         }
     }
 }
+
+// 1.Enumerable 클래스는 IEnumerable<T> 인터페이스를 구현하는 컬렉션 객체에 대해
+//   LINQ 쿼리를 수행할 수 있는 메서드를 제공한다.
+
+//*LINQ .NET Framework에서 데이터 쿼리를 지원하기 위해 도입된 기술로,
+// C# 및 VB.NET에서 사용할 수 있는 쿼리 언어이다.
+// 데이터를 검색, 정렬, 필터링, 그룹화 등을 할 수 있다.
+
+// 2.Repeat 메서드는 특정 숫자를 특정 횟수만큼 반복한 집합을 만들 때 사용하는 메서드이다.
+
+// 3.ToArray 메서드는 T[]배열로 만들때 사용 할 수 있다.
